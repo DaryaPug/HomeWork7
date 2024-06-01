@@ -1,28 +1,24 @@
 .menu-left{
+    display: flex;
+    justify-content: space-between;
     font-size: 15px;
     line-height: 40px;
-    padding-left: 30px;
-    padding-top: 14px;
+    margin-left: 12px;
+    margin-top: 7px;
 }
 .sale{
     width: 310px;
     height: 470px;
-    margin-top: 377px;
 }
 .right{
     width: 840px;
-    float: right;
 }
 .left{
     width: 310px;
-    float: left;
     background-color: #FBFBFB;
- }
+}
 .card{
-    float: left;
     text-align: left;
-    margin-bottom: 70px;
-    margin-right: 33px;
     text-align: center;
 }
 .card:nth-child(3n){
@@ -44,14 +40,11 @@
     margin: 0;
 }
 .nav{
+    display: flex;
     margin: 0;
     margin-bottom: 31px;
     text-decoration: none;
-}
-.clearfix::after{
-    content:'';
-    display:block;
-    clear:both;
+    justify-content: space-between;
 }
 .element{
     text-decoration: none;
@@ -62,11 +55,11 @@
 }
 .pages{
     margin-top: 90px;
-    text-align: right;
-    font-size: 0;  
+    display: flex;
+    justify-content: end;
 }
 .cell{
-    display: inline-block;
+    
     border: 1px solid #E5E5E5;
     border-radius: 4px;
     width: 35px;
@@ -84,12 +77,6 @@
     border-radius: 4px;
     color:#E5E5E5;
  }
-.left-nav{
-    float: left;
-}
-.rigt-nav{
-    float: right;
-}
 .nav-element-left{
     text-decoration: none;
     font-size: 15px;
@@ -132,9 +119,6 @@
     text-align: left;
     margin-top: 12px;
 }
-.last{
-    margin-bottom: 0;
-}
 .name{
     margin: 0;
     font-size: 18px;
@@ -150,10 +134,18 @@
 .shop-content{
     padding-top: 26px;
 }
-.card:nth-child(n+6){
-    margin-bottom: 0;
+.left-right{
+    display: flex;
+    justify-content: space-between;
 }
-.menu-left-element{
-    padding-left: 12px;
-    padding-top: 7px;
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 33px;
+}
+.left-container{
+display: block;
+padding-top: 14px;
+padding-left: 18px;
+padding-right: 24px;
 }
